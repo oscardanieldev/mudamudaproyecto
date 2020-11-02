@@ -1,0 +1,376 @@
+/*----------------------
+    VARIABLES DE COLORES
+-----------------------*/
+
+$gris: rgba(100, 100, 100, 1);
+$c-drop: rgba(255, 81, 0, 0.877);
+$c-drop-h: rgba(219, 69, 0, 0.877);
+
+
+$white: #fff;
+
+body{
+  background-color: rgb(231, 231, 231);
+}
+
+.zoom{
+  transition: transform .2s;
+}
+.zoom:hover{
+  transform: scale(1.05);
+}
+.c-naranja{
+  color: rgba(255, 81, 0, 0.877);
+}
+.c-naranja-sh{
+  color: rgba(255, 81, 0, 0.877);
+}
+.c-naranja:hover{
+  color: rgba(224, 71, 0, 0.877);
+}
+a:hover{
+  text-decoration: none;
+}
+.ppost{
+  padding-bottom: 150vh !important;
+}
+.bg-barra{
+    background-color: $gris !important;
+}
+.bg-art{
+  background-color: rgb(160, 157, 157);
+}
+.fuente-titulo{
+    font-family: 'Orbitron', sans-serif;
+
+
+}
+.sin-viñetas{
+    list-style: none;
+}
+
+.font-body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn-buscador{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #fe4918;
+   
+    color: white;
+    
+    border: 2px solid #fe4918;
+    border-radius: 0.5rem;
+    font-family: 'Oswald', sans-serif;
+    transition: all 0.4s ease;
+    margin: 15px 0;
+}
+
+.c-blanco{
+    color: white;
+}
+
+.transicion{
+    transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.h-menu:hover{
+    color: white !important;
+}
+
+.fz-menu{
+    font-size: small !important;
+}
+
+.cont-reducido{
+    width: 100%;
+    padding-right: 30%;
+    padding-left: 30%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.cont-reducido-i{
+  width: 100%;
+  height: 100%;
+  padding-right: 40%;
+  padding-left: 40%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cont-reducido-post{
+  width: 100%;
+  height: 100%;
+  padding-right: 22%;
+  padding-left: 22%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cont-reducido-p{
+  width: 100%;
+  
+  padding-right: 16%;
+  padding-left: 16%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cont-reducido-b{
+  width: 100%;
+  padding-right: 20%;
+  padding-left: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cont-redes{
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.cont-redes-m{
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.border {
+    border: 1px solid $c-drop !important;
+  }
+.border-top-salir{
+  display: block;
+    width: 50%;
+    height: 1px;
+    background-color: $c-drop;
+    margin-top: 1rem;
+}
+
+.border-admin{
+  border: 1px solid $c-drop !important;
+
+}
+
+.border-top-0 {
+    border-top: 0  !important;
+  }
+  .border-bottom-0 {
+    border-bottom: 0  !important;
+  }
+
+  .border-top {
+    border-top: 1px solid rgba(255, 81, 0, 0.877) !important;
+  }
+  .border-bottom {
+    border-bottom: 1px solid rgba(255, 81, 0, 0.877) !important;
+  }
+ 
+
+ /* .navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color:   rgba(255, 81, 0, 0.877)
+    ;
+  }*/
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .bg-admin{
+    background-color: rgb(190, 190, 190);
+  }
+
+  .iconos-m{
+      font-size: 22px;
+      color: rgba(255, 255, 255, 0.5);
+  }
+  .contacto-m{
+    font-size: 20px;
+    
+    color: rgba(255, 255, 255, 0.5);
+}
+  .iconos-e{
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*---------------BOTONES BARRA ESCRITORIO-----------------*/
+$c-border: rgb(255, 255, 255);
+$c-background: #E3E4DB;
+$c-text: #ffffff;
+
+.sparkle {
+  max-width: 10em;
+  color: $c-text;
+  margin: auto auto;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.u-hover--sparkle {
+ 
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.75em;
+  &::before,
+  &::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+  }
+
+  &::before {
+    border-top: 0.1em solid $c-border;
+    border-bottom: 0.1em solid $c-border;
+    transform: scale3d(0,1,1);
+  }
+
+  &::after {
+    border-left: 0.1em solid $c-border;
+    border-right: 0.1em solid $c-border;
+    transform: scale3d(1,0,1);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    transform: scale3d(1,1,1);
+    transition: transform 450ms;
+  }
+}
+
+
+
+
+
+//-------------DROPDOWN--------------
+
+.bg-dropdown{
+    background-color: $c-drop;
+    
+}
+
+
+
+.dropdown-item{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-item:hover{
+    background-color: $c-drop-h;
+}
+.dropdown-menu{
+    padding: 0;
+}
+
+//-------------ÍCONOS DE REDES--------
+
+.redes {
+  position: relative; 
+  display: block;
+  
+  background: $gris;
+  border-radius: 50%;
+  color: #666;
+  transition: .5s;
+}
+
+.redes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  border-radius: 50%;
+  background: rgba(255, 81, 0, 0.877);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.redes:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 81, 0, 0.877);
+}
+
+.redes:hover {
+  color: rgba(255, 81, 0, 0.877);
+  box-shadow: 0 0 5px rgba(255, 81, 0, 0.877);
+  text-shadow: 0 0 5px rgba(255, 81, 0, 0.877);
+}
+.info{
+  color: white;
+}
+
+.info:hover{
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+}
+
+.pestana i{
+  color: rgba(255, 255, 255, 0.5);
+}
+.pestana:hover i{
+  color: rgba(255, 81, 0, 0.877);
+}
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem $gris;
+}
+.s-focus{
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem $gris;
+}
+
+
+.p-cont{
+  padding: 125px 0;
+}
+.img-fluid-c {
+  max-width: 88%;
+  height: 75vh;
+  margin: auto;
+}
+@media only screen and (max-width: 768px){
+
+  .img-fluid-c {
+    max-width: 100%;
+    height: 75vh;
+    margin: auto;
+  }
+  
+ }
+
+ .border-right-a{
+  border-right: 1px solid $c-drop !important;
+ }
+
+ .resize{
+  border: 3px double #333;
+  
+  height: 50%;
+  margin: .2em 0 1em 0;
+  overflow: hidden;
+  
+   
+ }
+
+ .resize2 img {
+  margin: -220px 0 0 -210px;
+  padding: 6em 0 0 6em;
+}
